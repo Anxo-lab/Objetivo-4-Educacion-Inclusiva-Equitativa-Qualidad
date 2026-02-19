@@ -1,61 +1,192 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ODS 4: Educación inclusiva, equitativa y de calidad</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>ODS 4: Portal de Excelencia Educativa | Agenda 2030</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Poppins:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="secundaria.html">Datos Destacables</a></li>
-                <li><a href="#">Enlace 3</a></li>
-                <li><a href="#">Enlace 4</a></li>
-            </ul>
-        </nav>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="scroll-progress"></div>
+
+    <div class="theme-switcher">
+        <button id="btn-theme" title="Cambiar Apariencia">
+            <span class="mode-icon">🌓</span>
+            <span class="mode-text">MODO OSCURO</span>
+        </button>
+    </div>
+
+    <header class="main-hero" id="top">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-container">
+            <h1 class="glitch-text" data-text="ODS 4">ODS 4</h1>
+            <h2 class="hero-subtitle">Educación de Calidad</h2>
+            <div class="hero-line"></div>
+            <p class="hero-description">Transformando el mundo a través del aprendizaje inclusivo, equitativo y para toda la vida.</p>
+            <div class="scroll-indicator">
+                <div class="arrow"></div>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section class="intro">
-            <h1>ODS 4: Educación inclusiva, equitativa y de calidad</h1>
-            <p>El ODS 4 busca asegurar una educación inclusiva y equitativa de calidad para todos los niños y adultos, promoviendo oportunidades de aprendizaje durante toda la vida.</p>
-        </section>
+    <nav class="container nav-container" id="main-nav">
+        <div class="nav-brand">ODS<span>4</span></div>
+        <ul class="nav-menu">
+            <li><a href="#intro" class="nav-link">Introducción</a></li>
+            <li><a href="#metas-completas" class="nav-link">Metas Oficiales</a></li>
+            <li><a href="#recursos" class="nav-link">Recursos</a></li>
+            <li><a href="#infografia" class="nav-link">Infografía</a></li>
+            <li><a href="secundaria.html" class="nav-link-cta">DATOS DESTACABLES →</a></li>
+        </ul>
+    </nav>
 
-        <section class="objectives">
-            <h2>Metas del ODS 4</h2>
-            <ul>
-                <li>Garantizar que todos los jóvenes y adultos, tanto hombres como mujeres, logren la alfabetización y el cálculo numérico.</li>
-                <li>Asegurar el acceso a la educación técnica, vocacional y superior.</li>
-                <li>Eliminar las disparidades de género en la educación.</li>
+    <section id="intro" class="container reveal-section">
+        <div class="element-header">
+            <h2 class="section-title">01. El Cimiento de la Sostenibilidad</h2>
+        </div>
+        <div class="intro-grid">
+            <div class="intro-text">
+                <p class="emphasized">La educación es el catalizador de todos los Objetivos de Desarrollo Sostenible.</p>
+                <p>Garantizar una educación de calidad es la base para mejorar la vida de las personas y el desarrollo sostenible. Se han producido avances importantes con relación a la mejora en el acceso a la educación a todos los niveles y con el aumento en las tasas de escolarización, particularmente en el caso de las mujeres y las niñas.</p>
+            </div>
+            <div class="intro-visual">
+                <div class="inter-image-box">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop" alt="Educación Global" class="lightbox-trigger">
+                    <div class="img-overlay-info">Educación Primaria en el Siglo XXI</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="metas-completas" class="container reveal-section">
+        <div class="element-header">
+            <h2 class="section-title">02. Metas de la Agenda 2030 (Desglose Total)</h2>
+        </div>
+        
+        <div class="metas-wrapper">
+            <article class="meta-item">
+                <h3>4.1 Educación Primaria y Secundaria Universal</h3>
+                <p>De aquí a 2030, asegurar que todas las niñas y todos los niños terminen la enseñanza primaria y secundaria, que ha de ser gratuita, equitativa y de calidad y producir resultados de aprendizaje pertinentes y efectivos. Se estima que este hito reduciría la pobreza mundial en un 12%.</p>
+            </article>
+
+            <article class="meta-item">
+                <h3>4.2 Desarrollo de la Primera Infancia</h3>
+                <p>Asegurar que todas las niñas y todos los niños tengan acceso a servicios de atención y desarrollo en la primera infancia y educación preescolar de calidad, a fin de que estén preparados para la enseñanza primaria.</p>
+            </article>
+
+            <article class="meta-item">
+                <h3>4.3 Acceso igualitario a formación técnica y superior</h3>
+                <p>Asegurar el acceso igualitario de todos los hombres y las mujeres a una formación técnica, profesional y superior de calidad, incluida la enseñanza universitaria.</p>
+            </article>
+
+            <div class="inter-image-box">
+                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200&auto=format&fit=crop" alt="Recursos Educativos" class="lightbox-trigger">
+                <p class="caption">Recursos didácticos como base de la Meta 4.3</p>
+            </div>
+
+            <article class="meta-item">
+                <h3>4.4 Competencias para el trabajo decente</h3>
+                <p>Aumentar considerablemente el número de jóvenes y adultos que tienen las competencias necesarias, en particular técnicas y profesionales, para acceder al empleo, el trabajo decente y el emprendimiento.</p>
+            </article>
+
+            <article class="meta-item">
+                <h3>4.5 Disparidad de género e inclusión</h3>
+                <p>Eliminar las disparidades de género en la educación y asegurar el acceso igualitario a todos los niveles de la enseñanza y la formación profesional para las personas vulnerables, incluidas las personas con discapacidad.</p>
+            </article>
+
+            <article class="meta-item">
+                <h3>4.6 Alfabetización y aritmética</h3>
+                <p>Asegurar que todos los jóvenes y una proporción considerable de los adultos, tanto hombres como mujeres, estén alfabetizados y tengan nociones elementales de aritmética.</p>
+            </article>
+
+            <article class="meta-item">
+                <h3>4.7 Educación para el desarrollo sostenible</h3>
+                <p>Asegurar que todos los alumnos adquieran los conocimientos teóricos y prácticos necesarios para promover el desarrollo sostenible y la valoración de la diversidad cultural.</p>
+            </article>
+
+            <div class="inter-image-box">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1200&auto=format&fit=crop" alt="Campus Universitario" class="lightbox-trigger">
+                <p class="caption">Ambientes de aprendizaje para la Meta 4.7</p>
+            </div>
+
+            <div class="metas-extra">
+                <div class="meta-item">
+                    <h4>4.a Instalaciones Educativas</h4>
+                    <p>Construir y adecuar instalaciones educativas que tengan en cuenta las necesidades de los niños y las personas con discapacidad y que ofrezcan entornos de aprendizaje seguros y eficaces.</p>
+                </div>
+                <div class="meta-item">
+                    <h4>4.b Becas Internacionales</h4>
+                    <p>Aumentar considerablemente a nivel mundial el número de becas disponibles para los países en desarrollo, en particular los países menos adelantados.</p>
+                </div>
+                <div class="meta-item">
+                    <h4>4.c Calificación de Docentes</h4>
+                    <p>Aumentar considerablemente la oferta de docentes calificados, incluso mediante la cooperación internacional para la formación de docentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recursos" class="container reveal-section">
+        <div class="element-header">
+            <h2 class="section-title">03. Portales de Referencia</h2>
+        </div>
+        <div class="links-collection">
+            <p>Accede a la documentación oficial para una comprensión técnica del avance del ODS 4:</p>
+            <ul class="advanced-list">
+                <li>
+                    <span class="list-bullet">01</span>
+                    <div class="list-content">
+                        <strong>UNESCO - Seguimiento de la Educación:</strong> Análisis mundial de políticas educativas.
+                        <a href="https://es.unesco.org/gem-report/" target="_blank">Consultar Informe GEM</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="list-bullet">02</span>
+                    <div class="list-content">
+                        <strong>Naciones Unidas - Objetivos:</strong> El centro neurálgico de la Agenda 2030.
+                        <a href="https://www.un.org/sustainabledevelopment/es/education/" target="_blank">Plataforma ONU</a>
+                    </div>
+                </li>
+                <li>
+                    <span class="list-bullet">03</span>
+                    <div class="list-content">
+                        <strong>Global Partnership for Education:</strong> Cooperación para sistemas educativos resilientes.
+                        <a href="https://www.globalpartnership.org/" target="_blank">Alianza Global</a>
+                    </div>
+                </li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section class="media">
-            <img src="assets/images/imagen1.jpg" alt="Imagen Representativa ODS 4">
-            <p>Esta es una imagen que refleja el esfuerzo por lograr una educación inclusiva.</p>
-            <img src="assets/images/imagen2.jpg" alt="Imagen ODS 4">
-        </section>
+    <section id="infografia" class="container reveal-section">
+        <div class="element-header">
+            <h2 class="section-title">04. Visualización de Datos (Infografía)</h2>
+        </div>
+        <div class="infographic-module">
+            <div class="module-text">
+                <p>La infografía oficial de 2024 muestra que, a pesar de los esfuerzos, 1 de cada 4 escuelas carece de agua potable. Descarga el reporte visual para ver los mapas de calor educativos.</p>
+                <a href="https://www.un.org/sustainabledevelopment/wp-content/uploads/sites/3/2024/01/2309739_S_SDG_2023_infographics_4-4.pdf" target="_blank" class="btn-premium">Descargar Infografía (PDF)</a>
+            </div>
+        </div>
+    </section>
 
-        <section class="links">
-            <h2>Enlaces útiles</h2>
-            <ul>
-                <li><a href="https://example.com/mas_info_1">Más sobre la educación inclusiva</a></li>
-                <li><a href="https://example.com/mas_info_2">Cómo mejorar la educación equitativa</a></li>
-                <li><a href="https://example.com/mas_info_3">Educación de calidad para todos</a></li>
-            </ul>
-        </section>
-
-        <section class="infographics">
-            <h2>Infografía</h2>
-            <img src="assets/images/infografia.png" alt="Infografía ODS 4">
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 - ODS 4: Educación inclusiva, equitativa y de calidad</p>
+    <footer class="main-footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 - Proyecto Académico ODS 4 | Estándares de Educación Global</p>
+        </div>
     </footer>
+
+    <div id="modal-viewer" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img-src">
+    </div>
+
+    <script src="js/scripts.js"></script>
 </body>
 </html>
